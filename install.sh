@@ -22,9 +22,17 @@ scripts)
 
   ;;
 
+uninstall)
+
+  rm ~/.bash_gcloud_aliases
+  rm ~/bin/gssh
+  rm ~/bin/gvm
+
+  ;;
+
 *)
 
-  echo "No default installation target: aliases or scripts"
+  echo "No default installation target: aliases, scripts, or uninstall"
 
   ;;
 
