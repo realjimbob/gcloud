@@ -7,6 +7,6 @@ chmod u+x ~/bin/gcloud_aliases.sh
 
 # Script to install the various shortcut commands
 
-cp gssh ~/bin
+cp gssh ~/bin/gssh
 chmod u+x ~/bin/gssh
 
