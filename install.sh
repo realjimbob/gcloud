@@ -1,12 +1,31 @@
 #!/bin/bash
 
-# An includable script snippet for bash aliases instead of scripts
+case ${1} in
 
-cp gcloud_aliases.sh ~/bin/gcloud_aliases.sh
-chmod u+x ~/bin/gcloud_aliases.sh
+aliases)
 
-# Script to install the various shortcut commands
+  # An includable script snippet for bash aliases instead of scripts
 
-cp gssh ~/bin/gssh
-chmod u+x ~/bin/gssh
+  cp gcloud_aliases.sh ~/.bash_gcloud_aliases
 
+  ;;
+
+scripts)
+
+  # Copy the individual scripts to the user's bin directory
+
+  cp gssh ~/bin/gssh
+  chmod u+x ~/bin/gssh
+
+  cp gvm ~/bin/gvm
+  chmod u+x ~/bin/gvm
+
+  ;;
+
+*)
+
+  echo "No default installation target: aliases or scripts"
+
+  ;;
+
+esac
