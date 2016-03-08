@@ -1,2 +1,2 @@
-alias gvm='google cloud instances'
-alias gssh='google cloud ssh'
+alias gvm='gcloud compute  instances'
+alias gssh='gcloud compute  ssh'
